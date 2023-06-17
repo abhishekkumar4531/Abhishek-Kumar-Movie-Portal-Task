@@ -1,0 +1,48 @@
+uuid: 147109c2-0c8c-4ff7-9de5-5d1e6e70a75b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.add_review.field_review
+    - field.field.node.add_review.field_select_genre
+    - field.field.node.add_review.field_select_movie
+    - node.type.add_review
+  module:
+    - layout_builder
+    - layout_discovery
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          e0db8528-5e87-4d89-9a50-1d0e86e224eb:
+            uuid: e0db8528-5e87-4d89-9a50-1d0e86e224eb
+            region: content
+            configuration:
+              id: 'extra_field_block:node:add_review:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.add_review.teaser
+targetEntityType: node
+bundle: add_review
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_review: true
+  field_select_genre: true
+  field_select_movie: true

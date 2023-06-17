@@ -1,0 +1,23 @@
+uuid: 02064379-2786-4116-90c7-aec7cdde8f9c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.celebrity_news
+  module:
+    - text
+id: node.celebrity_news.body
+field_name: body
+entity_type: node
+bundle: celebrity_news
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,28 @@
+uuid: fbb346d5-9c10-4a89-b175-9afe4b955a4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.movie_news.body
+    - node.type.movie_news
+  module:
+    - text
+    - user
+id: node.movie_news.default
+targetEntityType: node
+bundle: movie_news
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

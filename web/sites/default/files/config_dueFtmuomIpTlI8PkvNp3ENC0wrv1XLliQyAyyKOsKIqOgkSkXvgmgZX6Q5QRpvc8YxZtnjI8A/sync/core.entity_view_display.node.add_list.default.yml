@@ -1,0 +1,53 @@
+uuid: e394c5a6-409b-45f2-9dcb-6d7ad7bc684b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.add_list.field_list_date
+    - field.field.node.add_list.field_list_desc
+    - field.field.node.add_list.field_reason_of_adding
+    - field.field.node.add_list.field_select_movies
+    - node.type.add_list
+  module:
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.add_list.default
+targetEntityType: node
+bundle: add_list
+mode: default
+content:
+  field_list_desc:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_reason_of_adding:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_select_movies:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_list_date: true

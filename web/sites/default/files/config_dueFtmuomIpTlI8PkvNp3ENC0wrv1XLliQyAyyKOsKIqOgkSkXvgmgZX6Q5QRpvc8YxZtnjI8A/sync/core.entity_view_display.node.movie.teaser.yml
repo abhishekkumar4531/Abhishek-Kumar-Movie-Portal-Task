@@ -1,0 +1,60 @@
+uuid: 0026146f-5fdd-43ae-b4cf-8a9d9acc2668
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.movie.field_buy_on_dvd
+    - field.field.node.movie.field_genre
+    - field.field.node.movie.field_imdb
+    - field.field.node.movie.field_in_cinemas
+    - field.field.node.movie.field_movie_image
+    - field.field.node.movie.field_movie_info
+    - field.field.node.movie.field_movie_review
+    - field.field.node.movie.field_netfilx
+    - field.field.node.movie.field_trailer
+    - node.type.movie
+  module:
+    - layout_builder
+    - layout_discovery
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          5463b325-8345-400f-a311-713ea743d545:
+            uuid: 5463b325-8345-400f-a311-713ea743d545
+            region: content
+            configuration:
+              id: 'extra_field_block:node:movie:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.movie.teaser
+targetEntityType: node
+bundle: movie
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_buy_on_dvd: true
+  field_genre: true
+  field_imdb: true
+  field_in_cinemas: true
+  field_movie_image: true
+  field_movie_info: true
+  field_movie_review: true
+  field_netfilx: true
+  field_trailer: true

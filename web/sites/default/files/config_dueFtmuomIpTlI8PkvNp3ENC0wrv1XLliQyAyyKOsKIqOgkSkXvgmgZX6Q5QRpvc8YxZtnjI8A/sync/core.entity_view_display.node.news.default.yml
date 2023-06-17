@@ -1,0 +1,19 @@
+uuid: 3aae0350-c3df-44cc-92a5-6ec904438582
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.news
+  module:
+    - user
+id: node.news.default
+targetEntityType: node
+bundle: news
+mode: default
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

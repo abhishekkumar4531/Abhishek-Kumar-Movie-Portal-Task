@@ -1,0 +1,22 @@
+uuid: 8787aebb-8f24-40eb-ac80-917ba8948670
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.celebrity_news
+    - node.type.movie_news
+  module:
+    - node
+    - system
+    - toolbar
+id: news_manager
+label: 'News Manager'
+weight: 5
+is_admin: null
+permissions:
+  - 'access toolbar'
+  - 'administer menu'
+  - 'create celebrity_news content'
+  - 'create movie_news content'
+  - 'delete any celebrity_news content'
+  - 'delete any movie_news content'

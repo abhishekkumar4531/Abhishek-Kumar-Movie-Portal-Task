@@ -1,0 +1,19 @@
+uuid: 6cd8c159-b360-4486-93b1-85ec5e22a469
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_reason_of_adding
+    - node.type.add_list
+id: node.add_list.field_reason_of_adding
+field_name: field_reason_of_adding
+entity_type: node
+bundle: add_list
+label: 'Why these are in list'
+description: 'Add about your list'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

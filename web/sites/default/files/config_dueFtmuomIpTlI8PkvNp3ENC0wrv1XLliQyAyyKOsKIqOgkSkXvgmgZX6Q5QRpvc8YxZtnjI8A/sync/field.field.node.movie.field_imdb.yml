@@ -1,0 +1,23 @@
+uuid: 7322790a-5005-4d3f-aa3e-8ab0ce312ee8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_imdb
+    - node.type.movie
+  module:
+    - link
+id: node.movie.field_imdb
+field_name: field_imdb
+entity_type: node
+bundle: movie
+label: IMDB
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 16
+field_type: link

@@ -1,0 +1,30 @@
+uuid: 790f7549-3b35-46ad-a2f8-0524a1e6f6b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.review
+    - core.entity_view_mode.comment.full
+    - field.field.comment.review.comment_body
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: comment.review.full
+targetEntityType: comment
+bundle: review
+mode: full
+content:
+  comment_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  links: true

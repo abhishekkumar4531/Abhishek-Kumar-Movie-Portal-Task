@@ -1,0 +1,10 @@
+uuid: 91d908f2-ce82-4037-b1b9-8c9db0111716
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.movie_
+label: 'Movie display'
+targetEntityType: node
+cache: true

@@ -1,0 +1,114 @@
+uuid: bdbaa286-e72d-4eeb-878e-35ea7982356f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.add_review.field_review
+    - field.field.node.add_review.field_select_genre
+    - field.field.node.add_review.field_select_movie
+    - node.type.add_review
+  module:
+    - layout_builder
+    - layout_discovery
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          7d3b7bc0-3d33-48d0-9d41-9285c02fbdb5:
+            uuid: 7d3b7bc0-3d33-48d0-9d41-9285c02fbdb5
+            region: content
+            configuration:
+              id: 'extra_field_block:node:add_review:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+          d2bdf3ce-277a-494b-8737-4b69cb8c08e1:
+            uuid: d2bdf3ce-277a-494b-8737-4b69cb8c08e1
+            region: content
+            configuration:
+              id: 'field_block:node:add_review:field_select_genre'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          86021e4c-9b3a-4997-ae1a-f06cee2c9fb8:
+            uuid: 86021e4c-9b3a-4997-ae1a-f06cee2c9fb8
+            region: content
+            configuration:
+              id: 'field_block:node:add_review:field_select_movie'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          8592e819-ffa1-40eb-bae6-451de3b07402:
+            uuid: 8592e819-ffa1-40eb-bae6-451de3b07402
+            region: content
+            configuration:
+              id: 'field_block:node:add_review:field_review'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: basic_string
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+        third_party_settings: {  }
+id: node.add_review.default
+targetEntityType: node
+bundle: add_review
+mode: default
+content:
+  field_review:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_select_genre:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_select_movie:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

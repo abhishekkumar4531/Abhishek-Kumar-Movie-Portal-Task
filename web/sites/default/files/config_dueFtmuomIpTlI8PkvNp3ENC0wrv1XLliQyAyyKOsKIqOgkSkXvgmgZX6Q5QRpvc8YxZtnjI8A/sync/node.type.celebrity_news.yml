@@ -1,0 +1,17 @@
+uuid: 5079ac2c-77cb-42e7-b019-a486e2c62459
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Celebrity News'
+type: celebrity_news
+description: 'Add celebrity related news'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

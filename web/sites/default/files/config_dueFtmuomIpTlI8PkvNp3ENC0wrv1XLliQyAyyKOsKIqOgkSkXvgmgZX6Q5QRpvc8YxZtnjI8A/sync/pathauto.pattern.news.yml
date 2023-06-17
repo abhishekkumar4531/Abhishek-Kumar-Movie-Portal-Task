@@ -1,0 +1,23 @@
+uuid: b5a6bbcf-527c-4c24-9094-1f1a1ab1333b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: news
+label: News
+type: 'canonical_entities:node'
+pattern: 'news/[node:title]'
+selection_criteria:
+  ebbf02f2-a579-4a97-be43-bc1eb488c029:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: ebbf02f2-a579-4a97-be43-bc1eb488c029
+    context_mapping:
+      node: node
+    bundles:
+      celebrity_news: celebrity_news
+      movie_news: movie_news
+selection_logic: and
+weight: -5
+relationships: {  }

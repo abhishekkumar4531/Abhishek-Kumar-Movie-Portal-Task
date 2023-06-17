@@ -1,0 +1,28 @@
+uuid: 371ea426-de5e-4f94-95bc-3fd8bad39451
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.normal_page.body
+    - node.type.normal_page
+  module:
+    - text
+    - user
+id: node.normal_page.default
+targetEntityType: node
+bundle: normal_page
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

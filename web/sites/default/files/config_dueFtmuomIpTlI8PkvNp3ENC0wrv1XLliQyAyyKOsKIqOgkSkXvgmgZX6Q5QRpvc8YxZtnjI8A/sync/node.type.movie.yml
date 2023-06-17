@@ -1,0 +1,17 @@
+uuid: edeea51c-b717-47e2-9383-a395db3d327d
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Movie
+type: movie
+description: 'Add a new movie'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false
