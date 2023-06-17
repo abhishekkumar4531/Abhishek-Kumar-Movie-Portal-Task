@@ -1,0 +1,24 @@
+uuid: 5414aec9-bbe5-4b78-94fe-8a291fe072c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_list_date
+    - node.type.add_list
+  module:
+    - datetime
+id: node.add_list.field_list_date
+field_name: field_list_date
+entity_type: node
+bundle: add_list
+label: 'Date Added'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

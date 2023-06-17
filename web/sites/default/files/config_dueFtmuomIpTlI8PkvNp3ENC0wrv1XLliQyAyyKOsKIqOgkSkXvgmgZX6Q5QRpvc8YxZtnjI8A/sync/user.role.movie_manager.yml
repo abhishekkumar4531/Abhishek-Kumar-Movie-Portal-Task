@@ -1,0 +1,25 @@
+uuid: f5c4c9a0-af9f-4920-a982-503fd55da94a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.add_list
+    - node.type.movie
+  module:
+    - block
+    - contextual
+    - node
+    - system
+    - toolbar
+id: movie_manager
+label: 'Movie Manager'
+weight: 4
+is_admin: null
+permissions:
+  - 'access contextual links'
+  - 'access toolbar'
+  - 'administer blocks'
+  - 'administer menu'
+  - 'create add_list content'
+  - 'create movie content'
+  - 'delete any movie content'

@@ -1,0 +1,10 @@
+uuid: 1d4d8bb2-c8d9-4851-bc43-3cea501e8890
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.custom_views
+label: 'Custom view'
+targetEntityType: node
+cache: true

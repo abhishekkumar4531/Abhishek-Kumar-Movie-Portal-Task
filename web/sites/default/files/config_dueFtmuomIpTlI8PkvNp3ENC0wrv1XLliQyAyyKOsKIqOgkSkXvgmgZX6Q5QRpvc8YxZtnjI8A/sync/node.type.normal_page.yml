@@ -1,0 +1,17 @@
+uuid: 3b685469-c25b-4812-b174-1e0d9b710bf2
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Normal page'
+type: normal_page
+description: 'Add here About Us, Terms and Privacy Policy'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

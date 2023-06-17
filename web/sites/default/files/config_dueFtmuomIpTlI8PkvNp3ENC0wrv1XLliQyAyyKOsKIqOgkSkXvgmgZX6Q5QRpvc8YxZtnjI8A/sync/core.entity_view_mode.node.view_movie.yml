@@ -1,0 +1,10 @@
+uuid: ae36fb1e-ec45-4d71-9c34-fc171ba207b7
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.view_movie
+label: 'View movie'
+targetEntityType: node
+cache: true

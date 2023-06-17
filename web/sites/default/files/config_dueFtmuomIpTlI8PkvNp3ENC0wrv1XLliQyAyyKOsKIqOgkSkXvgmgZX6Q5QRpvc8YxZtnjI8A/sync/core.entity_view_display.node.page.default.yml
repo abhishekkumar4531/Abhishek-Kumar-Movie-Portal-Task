@@ -1,0 +1,117 @@
+uuid: 85e96628-200e-4c39-b6cf-442a74abd381
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.page.body
+    - node.type.page
+    - views.view.recent_list
+    - views.view.recent_review
+  module:
+    - layout_builder
+    - layout_discovery
+    - quicktabs
+    - text
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: 'List and Movie'
+          context_mapping: {  }
+          column_widths: 50-50
+        components:
+          2e68a0a4-32dc-45e6-8922-09ffb015ba3c:
+            uuid: 2e68a0a4-32dc-45e6-8922-09ffb015ba3c
+            region: first
+            configuration:
+              id: 'views_block:recent_list-block_1'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: '4'
+            weight: 0
+            additional: {  }
+          3b9c40a1-69cf-48bc-ba67-a9b5cea5e39c:
+            uuid: 3b9c40a1-69cf-48bc-ba67-a9b5cea5e39c
+            region: first
+            configuration:
+              id: 'quicktabs_block:recent_news'
+              label: 'QuickTabs - Recent news'
+              label_display: '0'
+              provider: quicktabs
+              context_mapping: {  }
+            weight: 1
+            additional: {  }
+          c86a8976-374a-4e9a-81c1-96112193f6db:
+            uuid: c86a8976-374a-4e9a-81c1-96112193f6db
+            region: second
+            configuration:
+              id: 'views_block:recent_review-block_1'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          430146fc-f95a-4121-b130-0ac7af08f3b9:
+            uuid: 430146fc-f95a-4121-b130-0ac7af08f3b9
+            region: content
+            configuration:
+              id: 'field_block:node:page:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          ce09e105-d016-4add-b4be-d7f92ddac217:
+            uuid: ce09e105-d016-4add-b4be-d7f92ddac217
+            region: content
+            configuration:
+              id: 'extra_field_block:node:page:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+_core:
+  default_config_hash: M_Y8L5tfmhx7DR143E05YyZSpvgil6VFvqcfBWykalg
+id: node.page.default
+targetEntityType: node
+bundle: page
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+hidden: {  }

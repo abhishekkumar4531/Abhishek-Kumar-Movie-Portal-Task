@@ -1,0 +1,30 @@
+uuid: a4aaa456-c288-4d02-bca5-65270468bd31
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.celebrity_news.body
+    - node.type.celebrity_news
+  module:
+    - text
+    - user
+id: node.celebrity_news.teaser
+targetEntityType: node
+bundle: celebrity_news
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

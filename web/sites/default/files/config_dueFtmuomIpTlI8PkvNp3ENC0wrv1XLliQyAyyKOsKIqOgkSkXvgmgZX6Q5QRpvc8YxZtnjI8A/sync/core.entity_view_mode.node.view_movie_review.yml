@@ -1,0 +1,10 @@
+uuid: 1c43989e-115b-4220-af1d-83bb8f5add72
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.view_movie_review
+label: 'View movie review'
+targetEntityType: node
+cache: true

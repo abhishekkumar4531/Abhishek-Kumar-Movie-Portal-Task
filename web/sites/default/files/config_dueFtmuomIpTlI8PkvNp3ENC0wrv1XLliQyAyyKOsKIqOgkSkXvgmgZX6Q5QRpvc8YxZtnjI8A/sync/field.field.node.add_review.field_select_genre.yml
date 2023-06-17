@@ -1,0 +1,29 @@
+uuid: 5e23a596-4264-415e-a4db-89eba49c1dec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_select_genre
+    - node.type.add_review
+    - taxonomy.vocabulary.genre
+id: node.add_review.field_select_genre
+field_name: field_select_genre
+entity_type: node
+bundle: add_review
+label: 'Select Genre'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      genre: genre
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

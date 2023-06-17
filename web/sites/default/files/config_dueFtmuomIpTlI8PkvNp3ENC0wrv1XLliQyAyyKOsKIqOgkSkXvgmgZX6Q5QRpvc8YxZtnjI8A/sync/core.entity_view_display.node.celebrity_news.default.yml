@@ -1,0 +1,28 @@
+uuid: 9ab2a9c6-fea9-4534-8d04-3a4580bbb978
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.celebrity_news.body
+    - node.type.celebrity_news
+  module:
+    - text
+    - user
+id: node.celebrity_news.default
+targetEntityType: node
+bundle: celebrity_news
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }
